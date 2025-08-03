@@ -62,11 +62,6 @@ IsValid("AbTp9!fok") // true
 <p class="has-line-data" data-line-start="37" data-line-end="38"><img src="https://thumbs2.imgbox.com/ec/40/rYwKyLwl_t.png"></p>
 
 
-<h3 class="code-line" data-line-start=29 data-line-end=30 ><a id="1__Criao_de_usurio_29"></a>4 - Sobre a solução</h3>
-<p class="has-line-data" data-line-start="31" data-line-end="32">A solução é composta pela criação de uma validação customizada com [Bean Validation Custom Constraints](https://docs.oracle.com/javaee/7/tutorial/bean-validation-advanced001.htm#GKFGX) e adicionando a anotação customizada @ValidPassword à classe PasswordDTO, 
-onde será aplicada a lógica de validação contida na classe PasswordValidation ao atributo password. Quaisquer eventuais necessidades de negócio para a mudança de regras de senha estão contidas nessa classe isolada, o que garante mais facilidade de manutenção e clareza no código como um todo.</p>
-
-
 
 
 
