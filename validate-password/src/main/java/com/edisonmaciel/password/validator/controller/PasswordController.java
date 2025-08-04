@@ -18,7 +18,7 @@ public class PasswordController {
     }
 
     @PostMapping("/password")
-    public void validatePassword(@RequestBody PasswordRequest password) {
+    public void validatePassword(@RequestBody final PasswordRequest password) {
         passwordService.validate(password);
     }
 }

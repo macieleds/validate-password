@@ -9,6 +9,8 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
+import static org.apache.commons.lang3.StringUtils.isBlank;
+
 @Service
 public class PasswordServiceImpl implements PasswordService {
 
@@ -42,11 +44,7 @@ public class PasswordServiceImpl implements PasswordService {
         }
     }
 
-    private boolean isBlank(String str) {
-        return str == null || str.isBlank();
-    }
-
-    private boolean hasRepeatedCharacters(String password) {
+    private boolean hasRepeatedCharacters(final String password) {
         Set<Character> characters = new HashSet<>();
         for (char c : password.toCharArray()) {
             if (!characters.add(c)) {
